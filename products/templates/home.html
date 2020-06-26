@@ -1,0 +1,35 @@
+{%  extends 'base.html' %}
+
+{% block content  %}
+
+
+<div class="intro">
+     <h1  class="text-center"> Home </h1>
+</div>
+<hr>
+     
+     {% for instance in objects %}
+
+               <div class="container">
+                    <div class="row">
+                         <div class="col-12 col-sm-4">
+                              <div class="col "><p><b>({{instance.id}} ) Title: </b>{{ instance.title }}</p></div>
+                              <div class="col "><p><b>Price:</b> ${{ instance.price }}</p></div>
+                              <div class="col "><p><b>Rating:</b> {{ instance.ratings }}</p></div>
+
+
+                         </div>
+
+                         <div class="col-12 col-sm-4">
+                              {{instance.description}}  </div>
+                         <div class="col col-sm-4">
+                              <img src="https://marketingweek.imgix.net/content/uploads/2017/09/06163244/price-tags_750.jpg?auto=compress,format&q=60&w=750&h=460" alt="..." class="img-thumbnail">
+                         </div>
+                    </div>
+               </div>
+               <hr>
+          
+     {% endfor %}
+
+
+{% endblock %}
