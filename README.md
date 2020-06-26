@@ -7,11 +7,16 @@ https://shareyourproject.herokuapp.com
 # How to use this repo
 
 > Clone the repo
+
+> Outside the folder create a virtual environment 
+
+    virtualenv venv
+
 > Activate virtual env
 
     venv\Scripts\activate (on Windows)
     
-> Install Requirements
+> cd into the main folder. You'll see a requirements folder. Install the requirements.
 
     pip install -r requirements.txt
     
