@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='product',
             name='ratings',
-            field=models.DecimalField(blank=True, decimal_places=10000, default=0, max_digits=10000),
+            field=models.DecimalField(blank=True, decimal_places=100, default=0, max_digits=100),
         ),
     ]
