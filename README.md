@@ -27,5 +27,7 @@ https://shareyourproject.herokuapp.com
 # Layout information
 
 > Project name: dj1
+
 > App name: products
+
 > template location: products/templates
